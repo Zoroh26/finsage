@@ -1,4 +1,10 @@
+# Environment variables
 .env
+.env.local
+.env.production
+.env.staging
+.env.development
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -12,26 +18,145 @@ build/
 *.manifest
 *.spec
 
-# Virtual environment
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
 venv/
 .venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
 
-# VS Code settings
+# IDE settings
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Test and coverage reports
 .pytest_cache/
-coverage/
+.tox/
+.nox/
 .coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# PostgreSQL
+*.sql
+*.dump
+pg_hba.conf
+postgresql.conf
+
+# Alembic
+# Keep alembic.ini and versions folder, but ignore temp files
+alembic/versions/__pycache__/
 
 # Logs
 *.log
+logs/
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# FastAPI specific
-instance/
-*.db
+# Windows
+desktop.ini
+
+# FastAPI / Uvicorn specific
+*.pid
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Docker
+Dockerfile.prod
+docker-compose.override.yml
+
+# Security
+*.pem
+*.key
+*.crt
+*.csr
+
+# Local development
+local_settings.py
+.local
